@@ -67,7 +67,7 @@ void contourTracker::analyze( ofPolyline & curFrame ){
         resampleSmoothed = tempT;
     } else {
         for (int i = 0; i < 100; i++){
-            resampleSmoothed[i] = 0.75f * resampleSmoothed[i] + 0.25f * tempT[i];
+            resampleSmoothed[i] = 0.55f * resampleSmoothed[i] + 0.45f * tempT[i];
         }
     }
     

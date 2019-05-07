@@ -12,6 +12,7 @@
 		106B9A6182DF98E835C09B47 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA20A4B3FEF378FA209B9E4E /* ofxBaseGui.cpp */; };
 		2F3D91BE21876F240050F4D3 /* spikeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D91BD21876F240050F4D3 /* spikeScene.cpp */; };
 		2F3D91C22187718A0050F4D3 /* randomLineScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D91C12187718A0050F4D3 /* randomLineScene.cpp */; };
+		2FD4D97A2281D7960042B619 /* noiseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4D9792281D7960042B619 /* noiseScene.cpp */; };
 		31BDF2FF35F01A57F397B1A0 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6F5871E5EBCA735C51AB6 /* loader.c */; };
 		3354709252A5DC905E9FBA46 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 352E9A5BD0759CFD7E473A81 /* ofxCvShortImage.cpp */; };
 		3668E01145A9CB67D0FFA209 /* Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FADD60E012E1BC987CAF9 /* Distance.cpp */; };
@@ -136,6 +137,8 @@
 		2F3D91C02187718A0050F4D3 /* randomLineScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randomLineScene.h; sourceTree = "<group>"; };
 		2F3D91C12187718A0050F4D3 /* randomLineScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = randomLineScene.cpp; sourceTree = "<group>"; };
 		2FA66758CB73BB0FF2109040 /* ofxKinectExtras.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxKinectExtras.h; path = ../../../../addons/ofxKinect/src/extra/ofxKinectExtras.h; sourceTree = SOURCE_ROOT; };
+		2FD4D9782281D7960042B619 /* noiseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noiseScene.h; sourceTree = "<group>"; };
+		2FD4D9792281D7960042B619 /* noiseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = noiseScene.cpp; sourceTree = "<group>"; };
 		3072CF64038F784B0DA03C3D /* core.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = core.hpp; path = ../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/core.hpp; sourceTree = SOURCE_ROOT; };
 		3123FC43CDB08480B2226A91 /* baseScene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = baseScene.h; path = src/scenes/baseScene.h; sourceTree = SOURCE_ROOT; };
 		317E86E299B9096BCC777619 /* block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = block.hpp; path = ../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/block.hpp; sourceTree = SOURCE_ROOT; };
@@ -520,6 +523,16 @@
 			path = scenes/randomLineScene;
 			sourceTree = "<group>";
 		};
+		2FD4D9772281D7960042B619 /* noiseScene */ = {
+			isa = PBXGroup;
+			children = (
+				2FD4D9782281D7960042B619 /* noiseScene.h */,
+				2FD4D9792281D7960042B619 /* noiseScene.cpp */,
+			);
+			name = noiseScene;
+			path = scenes/noiseScene;
+			sourceTree = "<group>";
+		};
 		303E2D4AF80E80BD1FD5E5F6 /* detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +563,7 @@
 		36BF1C038F5AEC4D85473FE4 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2FD4D9772281D7960042B619 /* noiseScene */,
 				2F3D91BF2187718A0050F4D3 /* randomLineScene */,
 				2F3D91BB21876F240050F4D3 /* spikeScene */,
 				C1868819252A931A515C8E7D /* emptyScene */,
@@ -1233,6 +1247,7 @@
 				A0C015CC66A25C7CEDF8B659 /* emptyScene.cpp in Sources */,
 				A77E66349C2EFEF104A382AF /* sceneManager.cpp in Sources */,
 				6F0D599D9FD124B23D0E0F8D /* baseScene.cpp in Sources */,
+				2FD4D97A2281D7960042B619 /* noiseScene.cpp in Sources */,
 				2F3D91C22187718A0050F4D3 /* randomLineScene.cpp in Sources */,
 				402E47299102D11642A0662E /* ctmf.cpp in Sources */,
 				5214788DA4E89024804AE1F7 /* inputManager.cpp in Sources */,

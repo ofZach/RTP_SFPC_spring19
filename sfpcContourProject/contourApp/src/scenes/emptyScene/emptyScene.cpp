@@ -23,5 +23,5 @@ void emptyScene::draw(){
     
     
     CT->resampleSmoothed.draw();
-
+    
 }

@@ -2,7 +2,7 @@
 #include "emptyScene.h"
 #include "spikeScene.h"
 #include "randomLineScene.h"
-
+#include "noiseScene.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -10,6 +10,7 @@ void ofApp::setup(){
     
     IM.setup();
     
+    SM.scenes.push_back(new noiseScene());
     SM.scenes.push_back(new emptyScene());
     SM.scenes.push_back(new spikeScene());
     SM.scenes.push_back(new randomLineScene());
