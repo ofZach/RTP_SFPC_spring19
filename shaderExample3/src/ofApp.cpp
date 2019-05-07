@@ -23,7 +23,12 @@ void ofApp::update(){
 //               ofRandom(0,500),
 //               ofRandom(0,500));
 //    }
-    ofDrawCircle(mouseX, mouseY,200);
+    for (int i = 0; i < 30; i++){
+        ofFill();
+        ofSetColor(i % 2 == 0 ? 0 : 255);
+        ofDrawCircle(mouseX, mouseY,300 - i * 10);
+        
+    }
     fbo.end();
     
     
@@ -40,7 +45,7 @@ void ofApp::draw(){
     //fbo.draw(mouseX, mouseY);
     
     
-    ofSetCircleResolution(100);
+    ofSetCircleResolution(1000);
     
     shader.begin();
     shader.setUniform1f("time", ofGetElapsedTimef());
