@@ -51,8 +51,8 @@ void ofApp::update(){
                                inputScaled.x + inputScaled.width, inputScaled.x);
             float newY = ofMap(y, input.y, input.y + input.height,
                                inputScaled.y, inputScaled.y + inputScaled.height);
-            tempLine[i].set(newX, newY);
-            
+            tempLine[i].x = newX;
+            tempLine[i].y = newY;
         }
         CT.analyze(tempLine);
     }
