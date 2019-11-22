@@ -16,8 +16,7 @@
 int main( ){
     ofGLFWWindowSettings settings;
     settings.setGLVersion(3, 2); //we define the OpenGL version we want to use
-    settings.width = 1920;
-    settings.height = 1080;
+    settings.setSize(1920, 1080);
     settings.windowMode = OF_FULLSCREEN;
     ofCreateWindow(settings);
     // this kicks off the running of my app
